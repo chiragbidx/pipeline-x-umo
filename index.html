@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Enterprise Landing – Bootstrap Starter</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -11,81 +11,154 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     >
+    <link href="css/style.css" rel="stylesheet">
   </head>
-
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">PandaCorp</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Dropdown</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a class="nav-link disabled">Disabled</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
           </ul>
           <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>
       </div>
     </nav>
 
-    <div class="container my-5">
-      <h1>Hello, world!</h1>
-      <div class="col-lg-8 px-0">
-        <p class="fs-5">
-          You've successfully loaded up the Bootstrap starter example.
-        </p>
-        <p>Feel free to download or copy-and-paste any parts of this example.</p>
-
-        <hr class="col-1 my-4">
-
-        <a href="https://getbootstrap.com" class="btn btn-primary">Read the Bootstrap docs</a>
-        <a href="https://github.com/twbs/examples" class="btn btn-secondary">View on GitHub</a>
+    <!-- Hero Section -->
+    <section class="py-5 text-center bg-light border-bottom">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-lg-8 mx-auto">
+            <h1 class="display-4 fw-bold">Empower Your Enterprise with PandaCorp</h1>
+            <p class="lead mb-4">Get the tools you need to scale your business faster. Simple, scalable, and built on the world’s most reliable Bootstrap foundation.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <a href="#" class="btn btn-primary btn-lg px-4 me-sm-2">Get Started</a>
+              <a href="#" class="btn btn-outline-secondary btn-lg px-4">Learn More</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
- 
-        <!--
-          PANDA ELEMENT SELECTION SCRIPT
-          ===============================
-          Captures all element clicks inside the iframe and sends metadata to Bubble via postMessage.
-          Metadata captured: url, width, height, alt
-            ⚠ Do NOT remove or modify this script unless explicitly instructed by the admin.
-        -->
-        <script src="https://bfwqdadlcyndtaqmqtci.supabase.co/storage/v1/object/public/pandajs/panda-element-selection.js" defer></script>
+    <!-- Features Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col">
+            <h2 class="fw-bold">Features to Help You Succeed</h2>
+            <p class="text-muted">Everything you need to launch and grow – powered by Bootstrap.</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <div class="display-5 mb-3 text-primary">
+                  <svg width="1em" height="1em" fill="currentColor" class="bi bi-speedometer2" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 4a.5.5 0 0 1 .5.5v3.8l2.6 2.6a.5.5 0 1 1-.7.7l-2.7-2.7A.5.5 0 0 1 7.5 8V4.5A.5.5 0 0 1 8 4z"/><path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm6-7a6 6 0 1 1-12 0 6 6 0 0 1 12 0z"/></svg>
+                </div>
+                <h5 class="card-title">Optimized Performance</h5>
+                <p class="card-text">Lightning-fast load times with enterprise-grade reliability, thanks to Bootstrap’s core framework.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <div class="display-5 mb-3 text-primary">
+                  <svg width="1em" height="1em" fill="currentColor" class="bi bi-shield-check" viewBox="0 0 16 16" aria-hidden="true"><path d="M5.854 8.354a.5.5 0 1 1-.708-.708L7.5 5.293l2.354 2.353a.5.5 0 0 1-.708.708L8 6.707 5.854 8.353Zm6.246-.133c0 4.015-3.319 6.3-5.194 7.018a.5.5 0 0 1-.342 0c-1.875-.718-5.194-3.003-5.194-7.018v-3.07A.5.5 0 0 1 2 4.226c1.06-.555 2.321-.791 2.953-.877A.5.5 0 0 1 5.5 3h5a.5.5 0 0 1 .547.349c.632.086 1.893.322 2.953.877A.5.5 0 0 1 14 5.151v3.07Z"/></svg>
+                </div>
+                <h5 class="card-title">Enterprise Security</h5>
+                <p class="card-text">State-of-the-art security built in from the ground up, keeping your data safe and secure.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <div class="display-5 mb-3 text-primary">
+                  <svg width="1em" height="1em" fill="currentColor" class="bi bi-layout-text-window-reverse" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 8.5A.5.5 0 0 1 5.5 8h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2A.5.5 0 0 1 5.5 6h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-2-5A2.5 2.5 0 0 0 .5 6v8A2.5 2.5 0 0 0 3 16h10a2.5 2.5 0 0 0 2.5-2.5V6A2.5 2.5 0 0 0 13 3.5h-1v-.5a2 2 0 1 0-4 0v.5h-1zm5-1a1 1 0 1 1 2 0v.5H6v-.5a1 1 0 1 1 2 0v.5h-2V3h6v-.5a1 1 0 1 1 2 0v.5h-1v2.5a1 1 0 1 1-2 0V3h-6v1.5h14v1z"/></svg>
+                </div>
+                <h5 class="card-title">Seamless Integration</h5>
+                <p class="card-text">Plug in with your stack using simple, modular components and well-documented APIs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!--
-          PANDA BRANDING SCRIPT
-          ====================
-          Handles Panda-specific branding, logos, placeholders, and runtime injection for the iframe/editor.
-            ⚠ Do NOT remove or modify this script unless explicitly instructed by the admin.
-        -->
-        <script src="https://bfwqdadlcyndtaqmqtci.supabase.co/storage/v1/object/public/pandajs/panda-branding.js" defer></script>
-        <!--
-          PANDA AUTO RELOAD SCRIPT
-          ====================
-          Handles Panda HMR solution built on railway to hot reload changes in preview.
-            ⚠ Do NOT remove or modify this script unless explicitly instructed by the admin.
-        -->
-        <script>
-        const es = new EventSource("/__hmr");
-        es.onmessage = () => location.reload();
-        </script>
+    <!-- Testimonial Section -->
+    <section class="bg-light py-5">
+      <div class="container">
+        <div class="row justify-content-center mb-3">
+          <div class="col-lg-8">
+            <blockquote class="blockquote text-center">
+              <p class="mb-4 fs-4">"PandaCorp’s platform enabled our team to deliver results 2x faster. The onboarding experience was effortless, and we love the dependability."</p>
+              <footer class="blockquote-footer">Jordan Lee, <cite title="Company CEO">TechLead at VisionaryOps</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <span class="fw-bold">© 2026 PandaCorp</span>
+            <br>
+            <small class="text-secondary">Bootstrap Starter Template. All rights reserved.</small>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <nav>
+              <a href="#" class="text-light me-3">Home</a>
+              <a href="#" class="text-light me-3">Features</a>
+              <a href="#" class="text-light">Contact</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
 
+    <!-- Panda required scripts (Do not remove) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-gEWvE/U4fjL2tq5pNfdKfrrbHqMsvGr15TH0fQaYwV/YkqVaxNWcSHiI69IXdB2L" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <!--
+      PANDA ELEMENT SELECTION SCRIPT
+      ===============================
+      Captures all element clicks inside the iframe and sends metadata to Bubble via postMessage.
+      Metadata captured: url, width, height, alt
+        ⚠ Do NOT remove or modify this script unless explicitly instructed by the admin.
+    -->
+    <script src="https://bfwqdadlcyndtaqmqtci.supabase.co/storage/v1/object/public/pandajs/panda-element-selection.js" defer></script>
+    <!--
+      PANDA BRANDING SCRIPT
+      ====================
+      Handles Panda-specific branding, logos, placeholders, and runtime injection for the iframe/editor.
+        ⚠ Do NOT remove or modify this script unless explicitly instructed by the admin.
+    -->
+    <script src="https://bfwqdadlcyndtaqmqtci.supabase.co/storage/v1/object/public/pandajs/panda-branding.js" defer></script>
+    <!--
+      PANDA AUTO RELOAD SCRIPT
+      ====================
+      Handles Panda HMR solution built on railway to hot reload changes in preview.
+        ⚠ Do NOT remove or modify this script unless explicitly instructed by the admin.
+    -->
+    <script>
+      const es = new EventSource("/__hmr");
+      es.onmessage = () => location.reload();
+    </script>
   </body>
 </html>
